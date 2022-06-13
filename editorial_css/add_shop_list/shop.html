@@ -5,11 +5,213 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>샵</title>
+  <title>에디토리얼 하단 상품 추가</title>
 </head>
 
 <body>
+  <style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
 
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .contents_section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    .contents__title {
+      font-size: 3em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .contents__p {
+      width: 600px;
+      margin: 0 auto;
+      color: #191919;
+      text-align: center;
+    }
+
+    .shop {
+      width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+      background-color: #999;
+      border-radius: 16px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 450px;
+    }
+
+    .shop__info_text {
+      padding: 10px;
+      margin-top: 15px;
+    }
+
+    .shop__info_title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #191919;
+    }
+
+    .shop__info_price {
+      padding-left: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+
+  <section class="contents_section">
+    <h1 class="contents__title">HERE IS TITLE BOX</h1>
+    <p class="contents__p">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nam adipisci corrupti tenetur officiis architecto,
+      ullam
+      cum ipsum esse nihil eos quia quibusdam doloremque atque veniam dolor aliquam corporis minus.
+    </p>
+
+    <div class="shop">
+      <div class="shop__info">
+        <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/104164/product/image_1645622897402_1000.jpg"
+          alt="zangano-shop1">
+        <div class="shop__info_text">
+          <h3 class="shop__info_title">Baseball duo - ZANGANO</h3>
+          <span class="shop__info_price">1,200,000₩</span>
+          <a class="shop__info_btn" href="https://www.better-void.com/product/baseball_duo_zangano">구매하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
