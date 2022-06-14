@@ -133,13 +133,11 @@ table {
 /* --------- style --------- */
 
 .contents_section {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 15px;
-}
-
-.contents__main {
-  min-height: 500px;
 }
 
 .contents__title {
@@ -157,25 +155,23 @@ table {
 
 .shop {
   width: 300px;
-  margin: 0 auto;
+  margin: 150px auto 0 auto;
   padding: 15px 15px 0 15px;
-  background-color: #999;
-  border-radius: 16px;
+  border: 1px solid #000;
 }
 
 .shop__info_img {
   width: 300px;
   height: 300px;
   margin: 0 auto;
-  background-image: url(https://contents.sixshop.com/thumbnails/uploadedFiles/104164/product/image_1645622897402_1000.jpg);
+  background-image: url(./zangano_item.jpg);
   background-size: cover;
   background-position: center center;
-  border-radius: 16px;
-}
-
-img {
-  display: block;
-  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 15px solid #000;
+  border-right: 15px solid #000;
+  box-sizing: border-box;
 }
 
 .shop__info_text {
@@ -202,9 +198,22 @@ img {
   text-align: center;
   color: #666;
   background-color: #eee;
-  border-radius: 16px;
+  border: 1px solid #000;
   font-size: 1.05em;
   font-weight: bold;
   padding: 10px;
   text-decoration: none;
+  box-sizing: border-box;
+  opacity: 0.6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.shop__info_btn:hover {
+  opacity: 1;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 10px solid #000;
+  border-right: 10px solid #000;
 }
