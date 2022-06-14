@@ -1,3 +1,9 @@
+a,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
 body,
 section {
   display: flex;
@@ -11,7 +17,7 @@ section {
   height: 100vh;
 }
 
-.content {
+.content-1 {
   padding: 20px;
   box-sizing: content-box;
   border: 1px solid #000;
@@ -55,8 +61,9 @@ section {
   color: #666;
 }
 
-.item--1-info-btn {
-  text-decoration: none;
+.item--1-info-price::after {
+  content: "₩";
+  margin-left: 1px;
 }
 
 .item--1-info-btn-text {
@@ -75,4 +82,72 @@ section {
   color: #eee;
   background-color: #666;
   border: 1px solid #000;
+}
+
+/* 두번째 시안 / 보증서 디자인 활용 */
+
+.content-2 {
+  border: 1px solid #000;
+}
+
+.item--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.item--2-itemimg {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.item--2-info {
+  width: 100%;
+}
+
+.item--2-info-heading,
+.item--2-info-price,
+.item--2-info-btn {
+  display: block;
+}
+
+.item--2-info-heading {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 7px 0 7px 7px;
+  border-left: 7px solid #000;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.item--2-info-price {
+  text-align: right;
+  font-size: 1em;
+  font-weight: 200;
+  padding: 7px 7px 7px 7px;
+  border-right: 7px solid #000;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.item--2-info-price::before {
+  content: "₩";
+  margin-right: 1px;
+}
+
+.item--2-info-btn {
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 7px 7px 7px 7px;
+  border-left: 7px solid #000;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.item--2-info-btn:hover {
+  color: #eee;
+  background-color: #666;
 }
