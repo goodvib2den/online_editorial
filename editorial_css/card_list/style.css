@@ -28,7 +28,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 150px;
 }
 
 .item--1-itemimg {
@@ -74,14 +74,17 @@ section {
   font-weight: bold;
   font-size: 0.9em;
   color: #000;
+  box-sizing: border-box;
   border: 1px solid #000;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 
 .item--1-info-btn-text:hover {
-  color: #eee;
-  background-color: #666;
-  border: 1px solid #000;
+  color: #000;
+  box-sizing: border-box;
+  border-left: 5px solid #000;
+  border-right: 5px solid #000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /* 두번째 시안 / 보증서 디자인 활용 */
@@ -140,7 +143,7 @@ section {
 .item--2-info-btn {
   display: block;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 200;
   padding: 7px 7px 7px 7px;
   border-left: 7px solid #000;
   box-sizing: border-box;
